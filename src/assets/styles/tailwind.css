@@ -1,0 +1,13 @@
+@theme {
+  /* Typography */
+  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Merriweather", Georgia, "Times New Roman", Times, serif;
+
+  /* Colors */
+  --color-primary: #1c69a8;
+  --color-primary-hover: #145374;
+  --color-secondary: #e1712b;
+  --color-border-light: #e1e1e1;
+}
+
