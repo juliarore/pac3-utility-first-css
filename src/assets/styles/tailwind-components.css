@@ -1,3 +1,27 @@
 .link {
   @apply text-primary no-underline transition-colors duration-200 hover:text-primary-hover;
 }
+
+.section {
+  @apply max-w-[1200px] mx-auto py-8 md:py-12 lg:py-16 px-8 md:px-16 lg:px-0;
+}
+
+.card {
+  @apply flex flex-col items-center text-center min-w-[200px] flex-1 basis-full md:basis-[calc((100%-2rem)/2)] lg:basis-[calc((100%-12rem)/3)];
+
+  img {
+    @apply w-full h-[500px] mb-8 object-cover object-top rounded-lg transition-opacity duration-300 hover:opacity-80;
+  }
+}
+
+.btn {
+  @apply inline-block px-6 py-2 text-white text-xl bg-primary rounded-[10px] transition-colors duration-200 hover:bg-primary-hover;
+}
+
+.title-h2 {
+  @apply font-serif text-3xl font-semibold text-primary my-4 md:text-4xl;
+}
+
+.title-h3 {
+  @apply font-sans text-xl font-semibold text-black mb-4 md:text-2xl;
+}
