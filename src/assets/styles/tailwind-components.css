@@ -6,6 +6,14 @@
   @apply max-w-[1200px] mx-auto py-8 md:py-12 lg:py-16 px-8 md:px-16 lg:px-0;
 }
 
+.sm-section {
+  @apply max-w-[900px] mx-auto px-8 md:px-16 py-12 lg:py-16;
+}
+
+.body {
+  @apply flex flex-col font-sans bg-white;
+}
+
 .card {
   @apply flex flex-col items-center text-center min-w-[200px] flex-1 basis-full md:basis-[calc((100%-2rem)/2)] lg:basis-[calc((100%-12rem)/3)];
 
@@ -16,6 +24,10 @@
 
 .btn {
   @apply inline-block px-4 py-2 text-white text-lg bg-primary rounded-[10px] transition-colors duration-200 hover:bg-primary-hover;
+}
+
+.title-h1 {
+  @apply font-serif text-4xl font-bold mb-10 text-center md:text-5xl;
 }
 
 .title-h2 {
@@ -35,5 +47,27 @@
 
   input, textarea {
     @apply w-full py-2 px-4 font-sans border border-border-light transition-colors duration-200 focus:outline-none focus:border-primary rounded-lg;
+  }
+}
+
+.numbered-list {
+  counter-reset: item;
+
+  li {
+    @apply relative pl-12 mb-9 list-none;
+    counter-increment: item;
+
+    &::before {
+      @apply absolute -top-[0.1rem] left-0 flex items-center justify-center w-8 h-8 text-[20px] font-semibold text-secondary border border-secondary rounded-full;
+      content: counter(item);
+    }
+
+    h3 {
+      @apply mb-3;
+    }
+
+    p {
+      @apply mb-0 text-justify;
+    }
   }
 }
