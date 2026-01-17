@@ -10,8 +10,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap%22 rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap%22 rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
     <title>Participantes | Jornadas de cocina tradicional</title>
   </head>
@@ -19,9 +19,78 @@
     <include src="./views/header.html"></include>
 
     <main>
-      <section class="px-9 py-12 md:px-12 md:py-16 lg:px-36 lg:py-20">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-8">Participantes</h1>
-        <p class="text-lg text-gray-700">Contenido de la página de participantes próximamente.</p>
+      <!-- Hero Section -->
+      <section class="px-9 py-16 md:px-12 md:py-20 lg:px-36 lg:py-24 text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">Contestants</h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-12">This section describes the recipes of the best contestants</p>
+
+        <!-- Featured Image -->
+        <div class="w-full max-w-5xl mx-auto">
+          <img
+            src="./assets/images/contestants-hero.jpg"
+            alt="Delicious food prepared by contestants"
+            class="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
+
+      <!-- Recipes Section -->
+      <section class="px-9 py-12 md:px-12 md:py-16 lg:px-36 lg:py-20 bg-gray-50">
+        <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">The recipes</h2>
+        <p class="text-lg text-gray-600 mb-12">These are the recipes of the best contestants</p>
+
+        <!-- Recipe Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+          <!-- Recipe Card 1 -->
+          <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-bold text-black mb-4">Cajun seafood pasta</h3>
+            <div class="flex items-start gap-4">
+              <img
+                src="./assets/images/chef-1.jpg"
+                alt="John Cooper"
+                class="w-12 h-12 rounded-full object-cover flex-shrink-0"
+              />
+              <div>
+                <p class="font-semibold text-black">John Cooper</p>
+                <p class="text-sm text-gray-600 mt-1">This Cajun seafood pasta recipe is a hot one, but delicious!</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recipe Card 2 -->
+          <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-bold text-black mb-4">Cedar planked salmon</h3>
+            <div class="flex items-start gap-4">
+              <img
+                src="./assets/images/chef-2.jpg"
+                alt="Marta Alonso"
+                class="w-12 h-12 rounded-full object-cover flex-shrink-0"
+              />
+              <div>
+                <p class="font-semibold text-black">Marta Alonso</p>
+                <p class="text-sm text-gray-600 mt-1">Salmon reaches its full potential when it's grilled on top of a cedar plank.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recipe Card 3 -->
+          <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-bold text-black mb-4">Poulet au vinaigre</h3>
+            <div class="flex items-start gap-4">
+              <img
+                src="./assets/images/chef-3.jpg"
+                alt="Mary Ann Stones"
+                class="w-12 h-12 rounded-full object-cover flex-shrink-0"
+              />
+              <div>
+                <p class="font-semibold text-black">Mary Ann Stones</p>
+                <p class="text-sm text-gray-600 mt-1">Irresistible chicken, cooked with vinegar.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </section>
     </main>
 
